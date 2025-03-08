@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Heart Shape (Red Border) -->
+    <path
+        android:strokeWidth="4"
+        android:strokeColor="@android:color/black"
+        android:pathData="
+            M50,90
+            C15,60 5,35 15,20
+            A20,20 0,0,1 40,15
+            A20,20 0,0,1 50,30
+            A20,20 0,0,1 60,15
+            A20,20 0,0,1 85,20
+            C95,35 85,60 50,90" />
+
+    <!-- ECG Signal (Centered Inside the Heart) -->
+    <path
+        android:strokeWidth="3"
+        android:strokeColor="@android:color/black"
+        android:pathData="
+            M25,55
+            L35,55 L40,45
+            L45,65 L50,40
+            L55,70 L60,50
+            L65,55 L75,55" />
+</vector>

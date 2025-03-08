@@ -1,0 +1,42 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Plate -->
+    <path
+        android:strokeColor="@android:color/black"
+        android:strokeWidth="5"
+        android:pathData="M50,10 A40,40 0 1,1 50,90 A40,40 0 1,1 50,10 Z"/>
+
+    <!-- Fork (Left) - 4 Tines -->
+    <path
+        android:strokeColor="@android:color/black"
+        android:strokeWidth="4"
+        android:pathData="M20,10 L20,40 M15,10 L15,25 M25,10 L25,25 M10,10"/>
+
+    <!-- Fork Handle -->
+    <path
+        android:strokeColor="@android:color/black"
+        android:strokeWidth="4"
+        android:pathData="M20,40 L20,80"/>
+
+    <!-- Spoon Bowl (Properly Rounded) -->
+    <path
+        android:strokeColor="@android:color/black"
+        android:strokeWidth="4"
+        android:pathData="M80,12 A10,12 0 1,1 80,36 A10,12 0 1,1 80,12"/>
+
+    <!-- Spoon Handle (Smooth Transition) -->
+    <path
+        android:strokeColor="@android:color/black"
+        android:strokeWidth="4"
+        android:pathData="M80,36 Q80,55 80,80"/>
+
+    <!-- Checkmark (Inside Plate) -->
+    <path
+        android:strokeColor="@android:color/black"
+        android:strokeWidth="5"
+        android:pathData="M40,50 L47,60 L60,40"/>
+</vector>

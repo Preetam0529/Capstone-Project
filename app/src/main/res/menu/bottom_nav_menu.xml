@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_user_info"
+        android:icon="@drawable/ic_user_info"
+        android:title="User Info" />
+
+    <item
+        android:id="@+id/navigation_prescriptions"
+        android:icon="@drawable/ic_prescriptions"
+        android:title="Prescriptions" />
+
+    <item
+        android:id="@+id/navigation_diet"
+        android:icon="@drawable/ic_diet"
+        android:title="Diet" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile" />
+
+</menu>

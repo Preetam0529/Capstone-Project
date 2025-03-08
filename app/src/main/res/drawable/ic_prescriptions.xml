@@ -1,0 +1,23 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- Outer Rectangle -->
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="1"
+        android:pathData="M8,6h32a2,2 0 0 1 2,2v32a2,2 0 0 1 -2,2H8a2,2 0 0 1 -2,-2V8a2,2 0 0 1 2,-2z" />
+
+    <!-- Medical Cross -->
+    <path
+        android:fillColor="@color/black"
+        android:pathData="M32,8h4v4h4v4h-4v4h-4v-4h-4v-4h4z" />
+
+    <!-- Prescription Lines -->
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="1"
+        android:pathData="M12,24h24M12,32h20M12,38h16" />
+</vector>
