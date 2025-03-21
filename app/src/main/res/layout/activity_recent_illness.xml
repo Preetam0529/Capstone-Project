@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/theme">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp"
+            android:text="Recent Illnesses"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Health Issue Checkboxes -->
+        <RadioButton
+            android:id="@+id/radio_acute_bronchitis"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_radio_button"
+            android:layoutDirection="rtl"
+            android:text="Acute Bronchitis"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radio_bronchitis"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Bronchitis"
+            android:layoutDirection="rtl"
+            android:background="@drawable/custom_radio_button"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/radio_cold"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Cold"
+            android:layoutDirection="rtl"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_radio_button"/>
+
+        <RadioButton
+            android:id="@+id/radio_dengue"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Dengue"
+            android:layoutDirection="rtl"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_radio_button"/>
+
+        <RadioButton
+            android:id="@+id/radio_ear_infection"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Ear Infection"
+            android:layoutDirection="rtl"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_radio_button"/>
+
+        <RadioButton
+            android:id="@+id/radio_fever"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Fever"
+            android:layoutDirection="rtl"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_radio_button"/>
+
+        <RadioButton
+            android:id="@+id/radio_flu"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Flu"
+            android:layoutDirection="rtl"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_radio_button"/>
+
+        <RadioButton
+            android:id="@+id/radio_food_poisoning"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Food Poisoning"
+            android:layoutDirection="rtl"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_radio_button"/>
+
+        <RadioButton
+            android:id="@+id/radio_gastroenteritis"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Gastroenteritis"
+            android:layoutDirection="rtl"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_radio_button"/>
+
+        <RadioButton
+            android:id="@+id/radio_hypertensive_crisis"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Hypertensive Crisis"
+            android:layoutDirection="rtl"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_radio_button"/>
+
+        <RadioButton
+            android:id="@+id/radio_hypoglycemia"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Hypoglycemia Episode"
+            android:layoutDirection="rtl"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_radio_button"/>
+
+        <RadioButton
+            android:id="@+id/radio_infection"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Infection"
+            android:layoutDirection="rtl"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_radio_button"/>
+
+        <RadioButton
+            android:id="@+id/radio_pneumonia"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Pneumonia"
+            android:layoutDirection="rtl"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_radio_button"/>
+
+        <RadioButton
+            android:id="@+id/radio_respiratory_infection"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Respiratory Infection"
+            android:layoutDirection="rtl"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_radio_button"/>
+
+        <RadioButton
+            android:id="@+id/radio_severe_headache"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Severe Headache"
+            android:layoutDirection="rtl"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_radio_button"/>
+
+        <RadioButton
+            android:id="@+id/radio_sinusitis"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Sinusitis"
+            android:layoutDirection="rtl"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_radio_button"/>
+
+        <RadioButton
+            android:id="@+id/radio_stomach_ulcer"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Stomach Ulcer"
+            android:layoutDirection="rtl"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_radio_button"/>
+
+        <RadioButton
+            android:id="@+id/radio_typhoid"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Typhoid"
+            android:layoutDirection="rtl"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_radio_button"/>
+
+        <RadioButton
+            android:id="@+id/radio_uti"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Urinary Tract Infection"
+            android:layoutDirection="rtl"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_radio_button"/>
+
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="24dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/teal_700"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</ScrollView>

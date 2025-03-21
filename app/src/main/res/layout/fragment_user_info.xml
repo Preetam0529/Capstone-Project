@@ -12,101 +12,143 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.UserInfoFragment"
-        android:padding="16dp">
+        tools:context=".UserInfoFragment">
 
-        <!-- Name -->
-        <EditText
-            android:id="@+id/et_name"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:hint="Enter Name"
-            android:text="@={viewModel.name}"
-            app:layout_constraintTop_toTopOf="parent"
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:columnCount="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <!-- Age -->
-        <EditText
-            android:id="@+id/et_age"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:hint="Enter Age"
-            android:inputType="number"
-            android:text="@={viewModel.age}"
-            app:layout_constraintTop_toBottomOf="@id/et_name"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            <!-- Blood Pressure -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#FFCDD2"
+                app:cardCornerRadius="12dp">
 
-        <!-- Height -->
-        <EditText
-            android:id="@+id/et_height"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:hint="Enter Height (cm)"
-            android:inputType="numberDecimal"
-            android:text="@={viewModel.height}"
-            app:layout_constraintTop_toBottomOf="@id/et_age"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Blood Pressure"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
 
-        <!-- Weight -->
-        <EditText
-            android:id="@+id/et_weight"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:hint="Enter Weight (kg)"
-            android:inputType="numberDecimal"
-            android:text="@={viewModel.weight}"
-            app:layout_constraintTop_toBottomOf="@id/et_height"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            <!-- Heart Rate -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#C8E6C9"
+                app:cardCornerRadius="12dp">
 
-        <!-- BP -->
-        <EditText
-            android:id="@+id/et_bp"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:hint="Enter BP (sys/dia)"
-            android:text="@={viewModel.bp}"
-            app:layout_constraintTop_toBottomOf="@id/et_weight"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Heart Rate"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
 
-        <!-- Heart Rate -->
-        <EditText
-            android:id="@+id/et_heart_rate"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:hint="Enter Heart Rate (bpm)"
-            android:inputType="number"
-            android:text="@={viewModel.heartRate}"
-            app:layout_constraintTop_toBottomOf="@id/et_bp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            <!-- Blood Sugar -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#BBDEFB"
+                app:cardCornerRadius="12dp">
 
-        <!-- Sugar Level -->
-        <EditText
-            android:id="@+id/et_sugar_level"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:hint="Enter Sugar Level (mg/dL)"
-            android:inputType="numberDecimal"
-            android:text="@={viewModel.sugarLevel}"
-            app:layout_constraintTop_toBottomOf="@id/et_heart_rate"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Blood Sugar"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
 
-        <!-- Submit Button -->
-        <Button
-            android:id="@+id/btn_submit"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Submit"
-            android:onClick="@{() -> viewModel.onSubmit()}"
-            app:layout_constraintTop_toBottomOf="@id/et_sugar_level"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            <!-- Cholesterol -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#FFF9C4"
+                app:cardCornerRadius="12dp">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Cholesterol"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Oxygen Saturation -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#D1C4E9"
+                app:cardCornerRadius="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="Oxygen Saturation"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Body Temperature -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#FFECB3"
+                app:cardCornerRadius="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="Body Temperature"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Sleep Hours -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#B3E5FC"
+                app:cardCornerRadius="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Sleep Hours"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+        </androidx.gridlayout.widget.GridLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>
