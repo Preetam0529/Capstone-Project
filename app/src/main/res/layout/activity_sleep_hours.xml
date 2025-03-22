@@ -30,7 +30,6 @@
         android:layout_gravity="center"
         android:src="@drawable/icon_sleep_hours"
         android:layout_marginTop="30dp"
-        android:background="@drawable/rounded_image"
         android:contentDescription="Sleep Icon"/>
 
 

@@ -8,7 +8,8 @@
     android:orientation="vertical"
     android:padding="20dp"
     android:gravity="top"
-    tools:context=".BodyTemperatureActivity">
+    tools:context=".ui.user_info.BodyTempActivity"
+    android:background="@drawable/app_bg">
 
     <!-- Title -->
     <TextView
@@ -18,7 +19,6 @@
         android:text=" Your Body Temperature"
         android:textSize="28sp"
         android:layout_gravity="center"
-
         android:layout_marginLeft="5dp"
         android:textColor="#333333"
         android:textStyle="bold"
@@ -29,7 +29,6 @@
         android:layout_gravity="center"
         android:layout_height="214dp"
         android:layout_marginTop="30dp"
-        android:background="@drawable/rounded_image"
         android:src="@drawable/icon_body_temp" />
 
     <!-- Body Temperature Input -->

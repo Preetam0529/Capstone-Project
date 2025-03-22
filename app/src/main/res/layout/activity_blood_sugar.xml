@@ -1,6 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:fillViewport="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="top">
+
+        <!-- Heading Title -->
+        <TextView
+            android:id="@+id/bloodsugarHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Sugar Level"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Blood Sugar Icon -->
+        <ImageView
+            android:id="@+id/bloodsugarIcon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/icon_blood_sugar"
+            android:contentDescription="Blood Sugar Icon"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center" />
+
+        <!-- Blood Sugar Input Field -->
+
+        <!-- Blood Sugar Type RadioGroup -->
+
+
+        <!-- Submit Button -->
+        <EditText
+            android:id="@+id/bloodsugarInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/rounded_button"
+            android:hint="Enter your blood sugar level (mg/dL)"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/submitbloodSugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Submit"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginTop="250dp" />
+    </LinearLayout>
+
+</ScrollView>
