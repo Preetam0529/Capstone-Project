@@ -21,11 +21,50 @@
         <activity
             android:name=".SplashActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.user_info.BloodPressureActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".ui.user_info.HeartRateActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".ui.user_info.BloodSugarActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".ui.user_info.CholesterolActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".ui.user_info.OxygenSaturationActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".ui.user_info.BodyTempActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".ui.user_info.SleepHoursActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".ui.user_info.PhysicalActivityActivity"
+            android:exported="true">
         </activity>
 
     </application>

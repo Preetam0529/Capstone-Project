@@ -33,7 +33,8 @@
                 android:layout_height="150dp"
                 android:layout_margin="5dp"
                 app:cardBackgroundColor="#FFAB91"
-                app:cardCornerRadius="12dp">
+                app:cardCornerRadius="12dp"
+                android:id="@+id/blood_pressure_card">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -52,7 +53,8 @@
                 android:layout_height="150dp"
                 android:layout_margin="5dp"
                 app:cardBackgroundColor="#80CBC4"
-                app:cardCornerRadius="12dp">
+                app:cardCornerRadius="12dp"
+                android:id="@+id/heart_rate_card">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -71,7 +73,8 @@
                 android:layout_height="150dp"
                 android:layout_margin="5dp"
                 app:cardBackgroundColor="#FFCC80"
-                app:cardCornerRadius="12dp">
+                app:cardCornerRadius="12dp"
+                android:id="@+id/blood_sugar_card">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -90,7 +93,8 @@
                 android:layout_height="150dp"
                 android:layout_margin="5dp"
                 app:cardBackgroundColor="#E6EE9C"
-                app:cardCornerRadius="12dp">
+                app:cardCornerRadius="12dp"
+                android:id="@+id/cholesterol_card">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -109,7 +113,8 @@
                 android:layout_height="150dp"
                 android:layout_margin="5dp"
                 app:cardBackgroundColor="#9FA8DA"
-                app:cardCornerRadius="12dp">
+                app:cardCornerRadius="12dp"
+                android:id="@+id/oxygen_saturation_card">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -128,7 +133,8 @@
                 android:layout_height="150dp"
                 android:layout_margin="5dp"
                 app:cardBackgroundColor="#F48FB1"
-                app:cardCornerRadius="12dp">
+                app:cardCornerRadius="12dp"
+                android:id="@+id/body_temp_card">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -147,7 +153,8 @@
                 android:layout_height="150dp"
                 android:layout_margin="5dp"
                 app:cardBackgroundColor="#90CAF9"
-                app:cardCornerRadius="12dp">
+                app:cardCornerRadius="12dp"
+                android:id="@+id/sleep_hours_card">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -166,7 +173,8 @@
                 android:layout_height="150dp"
                 android:layout_margin="5dp"
                 app:cardBackgroundColor="#A5D6A7"
-                app:cardCornerRadius="12dp">
+                app:cardCornerRadius="12dp"
+                android:id="@+id/physical_activity_card">
 
                 <TextView
                     android:layout_width="wrap_content"
