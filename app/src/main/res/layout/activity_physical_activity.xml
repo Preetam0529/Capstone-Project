@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@drawable/theme">
+    android:background="@drawable/app_bg">
 
     <!-- Header Title -->
     <TextView
@@ -24,7 +24,7 @@
         android:id="@+id/bpImage"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/physical_activity"
+        android:src="@drawable/icon_physical_activity"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:contentDescription="physical activity Icon" />

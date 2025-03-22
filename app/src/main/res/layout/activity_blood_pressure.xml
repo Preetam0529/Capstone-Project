@@ -5,16 +5,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@drawable/theme">
+    android:background="@drawable/app_bg">
 
     <!-- Header Title -->
     <TextView
         android:id="@+id/headerTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=" Blood Pressure Level"
+        android:text="Blood Pressure Level"
         android:textSize="28sp"
         android:textColor="@color/black"
+        android:textStyle="bold"
         android:fontFamily="sans-serif-medium"
         android:layout_gravity="center"
         android:layout_marginTop="40dp" />
@@ -24,7 +25,7 @@
         android:id="@+id/bpImage"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/bp_icon"
+        android:src="@drawable/icon_bp"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:contentDescription="Blood Pressure Icon" />

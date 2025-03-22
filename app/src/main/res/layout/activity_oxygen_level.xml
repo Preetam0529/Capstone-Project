@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/oxygenLevelLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="top"
+    tools:context=".OxygenLevelActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/oxygenLevelTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Oxygen Level"
+        android:textSize="28sp"
+        android:layout_gravity="center"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_oxygen_level"
+        android:layout_marginTop="30dp"/>
+    <!-- Oxygen Level Input -->
+    <EditText
+        android:id="@+id/oxygenLevelInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="% SpO2 (e.g., 98)"
+        android:inputType="number"
+        android:padding="14dp"
+        android:textColor="#333333"
+        android:layout_marginTop="40dp"
+        android:textColorHint="#555555"
+        android:background="@drawable/rounded_button"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitOxygenLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="20sp"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="100dp"
+        android:padding="12dp"
+        android:elevation="4dp"/>
+
+    <!-- Footer -->
+
+
+</LinearLayout>

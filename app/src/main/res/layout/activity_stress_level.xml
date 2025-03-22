@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@drawable/theme">
+    android:background="@drawable/app_bg">
 
     <!-- Header Title -->
     <TextView
@@ -24,7 +24,7 @@
         android:id="@+id/bpImage"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/stress_level"
+        android:src="@drawable/icon_stress_level"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:contentDescription="Blood Pressure Icon" />
@@ -89,7 +89,7 @@
         android:layout_gravity="center"
         android:backgroundTint="@color/black"
         android:padding="10dp"
-        android:layout_marginTop="270dp"
+        android:layout_marginTop="100dp"
         android:text="Submit"
         android:textColor="@color/white"
         android:textSize="20sp" />

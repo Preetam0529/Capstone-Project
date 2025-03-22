@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/heartRateLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="top"
+    tools:context=".HeartRateActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/heartRateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Heart Rate"
+        android:textSize="28sp"
+        android:textColor="#333333"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Heart Rate Input -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_heart_rate"
+        android:layout_marginTop="30dp"/>
+    <!-- Submit Button -->
+    <EditText
+        android:id="@+id/heartRateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_button"
+        android:hint="BPM (Beats Per Minute)"
+        android:inputType="number"
+        android:padding="14dp"
+        android:textColor="#333333"
+        android:textColorHint="#555555"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/submitHeartRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="20sp"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="100dp"
+        android:padding="12dp"
+        android:elevation="4dp"/>
+
+
+
+</LinearLayout>

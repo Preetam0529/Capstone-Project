@@ -32,7 +32,7 @@
                 android:layout_width="170dp"
                 android:layout_height="150dp"
                 android:layout_margin="5dp"
-                app:cardBackgroundColor="#FFCDD2"
+                app:cardBackgroundColor="#FFAB91"
                 app:cardCornerRadius="12dp">
 
                 <TextView
@@ -41,7 +41,9 @@
                     android:layout_gravity="center"
                     android:text="Blood Pressure"
                     android:textColor="#000"
-                    android:textSize="20sp" />
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
             </androidx.cardview.widget.CardView>
 
             <!-- Heart Rate -->
@@ -49,7 +51,7 @@
                 android:layout_width="170dp"
                 android:layout_height="150dp"
                 android:layout_margin="5dp"
-                app:cardBackgroundColor="#C8E6C9"
+                app:cardBackgroundColor="#80CBC4"
                 app:cardCornerRadius="12dp">
 
                 <TextView
@@ -58,7 +60,9 @@
                     android:layout_gravity="center"
                     android:text="Heart Rate"
                     android:textColor="#000"
-                    android:textSize="20sp" />
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
             </androidx.cardview.widget.CardView>
 
             <!-- Blood Sugar -->
@@ -66,7 +70,7 @@
                 android:layout_width="170dp"
                 android:layout_height="150dp"
                 android:layout_margin="5dp"
-                app:cardBackgroundColor="#BBDEFB"
+                app:cardBackgroundColor="#FFCC80"
                 app:cardCornerRadius="12dp">
 
                 <TextView
@@ -75,7 +79,9 @@
                     android:layout_gravity="center"
                     android:text="Blood Sugar"
                     android:textColor="#000"
-                    android:textSize="20sp" />
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
             </androidx.cardview.widget.CardView>
 
             <!-- Cholesterol -->
@@ -83,7 +89,7 @@
                 android:layout_width="170dp"
                 android:layout_height="150dp"
                 android:layout_margin="5dp"
-                app:cardBackgroundColor="#FFF9C4"
+                app:cardBackgroundColor="#E6EE9C"
                 app:cardCornerRadius="12dp">
 
                 <TextView
@@ -92,7 +98,9 @@
                     android:layout_gravity="center"
                     android:text="Cholesterol"
                     android:textColor="#000"
-                    android:textSize="20sp" />
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
             </androidx.cardview.widget.CardView>
 
             <!-- Oxygen Saturation -->
@@ -100,17 +108,18 @@
                 android:layout_width="170dp"
                 android:layout_height="150dp"
                 android:layout_margin="5dp"
-                app:cardBackgroundColor="#D1C4E9"
+                app:cardBackgroundColor="#9FA8DA"
                 app:cardCornerRadius="12dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:textAlignment="center"
                     android:text="Oxygen Saturation"
                     android:textColor="#000"
-                    android:textSize="20sp" />
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
             </androidx.cardview.widget.CardView>
 
             <!-- Body Temperature -->
@@ -118,17 +127,18 @@
                 android:layout_width="170dp"
                 android:layout_height="150dp"
                 android:layout_margin="5dp"
-                app:cardBackgroundColor="#FFECB3"
+                app:cardBackgroundColor="#F48FB1"
                 app:cardCornerRadius="12dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:textAlignment="center"
                     android:text="Body Temperature"
                     android:textColor="#000"
-                    android:textSize="20sp" />
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
             </androidx.cardview.widget.CardView>
 
             <!-- Sleep Hours -->
@@ -136,7 +146,7 @@
                 android:layout_width="170dp"
                 android:layout_height="150dp"
                 android:layout_margin="5dp"
-                app:cardBackgroundColor="#B3E5FC"
+                app:cardBackgroundColor="#90CAF9"
                 app:cardCornerRadius="12dp">
 
                 <TextView
@@ -145,7 +155,28 @@
                     android:layout_gravity="center"
                     android:text="Sleep Hours"
                     android:textColor="#000"
-                    android:textSize="20sp" />
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Physical Activity -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#A5D6A7"
+                app:cardCornerRadius="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Physical Activity"
+                    android:textColor="#000"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
             </androidx.cardview.widget.CardView>
 
         </androidx.gridlayout.widget.GridLayout>
