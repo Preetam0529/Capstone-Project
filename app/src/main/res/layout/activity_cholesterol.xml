@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@drawable/app_bg">
+    android:background="@drawable/app_background">
 
     <!-- Header Title -->
     <TextView
@@ -26,6 +26,7 @@
         android:layout_height="150dp"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
+        android:src="@drawable/icon_cholesterol"
         android:contentDescription="Cholestrol Icon" />
 
     <!-- BP Level Selection -->

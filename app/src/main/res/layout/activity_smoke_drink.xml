@@ -5,13 +5,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@drawable/app_bg">
+    android:background="@drawable/app_background">
 
     <ImageView
         android:id="@+id/smoke"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:src="@drawable/icon_smoking"
         android:layout_marginTop="40dp"/>
 
     <TextView
@@ -20,7 +21,7 @@
         android:text="Do you smoke?"
         android:textColor="@color/black"
         android:textSize="40dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"/>
 
     <RadioGroup
@@ -47,15 +48,6 @@
             android:layout_marginStart="16dp"
             android:textSize="30sp"/>
     </RadioGroup>
-
-    <ImageView
-        android:id="@+id/drink"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:contentDescription="Description of the image" />
-
 
     <TextView
         android:layout_width="wrap_content"
@@ -90,5 +82,14 @@
             android:layout_marginStart="16dp"
             android:textSize="30sp"/>
     </RadioGroup>
+
+    <ImageView
+        android:id="@+id/drink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icon_alcohol"
+        android:contentDescription="Description of the image" />
 
 </LinearLayout>

@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/app_bg"
+    android:background="@drawable/app_background"
     android:fillViewport="true">
 
     <LinearLayout
@@ -29,24 +29,18 @@
         <!-- Blood Sugar Icon -->
         <ImageView
             android:id="@+id/bloodsugarIcon"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:src="@drawable/icon_blood_sugar"
-            android:contentDescription="Blood Sugar Icon"
+            android:layout_width="190dp"
+            android:layout_height="197dp"
+            android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:layout_gravity="center" />
+            android:contentDescription="Blood Sugar Icon"
+            android:src="@drawable/icon_blood_sugar" />
 
-        <!-- Blood Sugar Input Field -->
-
-        <!-- Blood Sugar Type RadioGroup -->
-
-
-        <!-- Submit Button -->
         <EditText
             android:id="@+id/bloodsugarInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="0dp"
             android:background="@drawable/rounded_button"
             android:hint="Enter your blood sugar level (mg/dL)"
             android:inputType="numberDecimal"
@@ -64,7 +58,7 @@
             android:textColor="@color/white"
             android:textSize="20sp"
             android:padding="10dp"
-            android:layout_marginTop="250dp" />
+            android:layout_marginTop="300dp" />
     </LinearLayout>
 
 </ScrollView>

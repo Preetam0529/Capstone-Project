@@ -21,10 +21,10 @@
     <item android:state_checked="true">
         <shape android:shape="rectangle">
             <corners android:radius="10dp" />
-            <solid android:color="#4CAF50" />
+            <solid android:color="#B5FFFC" />
             <stroke
                 android:width="2dp"
-                android:color="#388E3C" />
+                android:color="#000000" />
             <padding
                 android:left="16dp"
                 android:top="8dp"

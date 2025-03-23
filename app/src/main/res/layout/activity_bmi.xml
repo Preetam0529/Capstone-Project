@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
-    android:background="@drawable/app_bg">
+    android:background="@drawable/app_background">
 
     <!-- App Title -->
     <TextView
@@ -31,8 +31,8 @@
         android:background="@drawable/spinner_background"
         android:textColorHint="#555555"
         android:textSize="18sp"
-        android:layout_below="@id/titleText"
-        android:layout_marginTop="20dp"/>
+        android:layout_below="@id/bmiImage"
+        android:layout_marginTop="50dp"/>
 
     <!-- Weight Input -->
     <EditText
@@ -71,14 +71,13 @@
         android:textSize="20sp"
         android:background="@drawable/rounded_button"
         android:layout_below="@id/hiddenCalculationInput"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:padding="12dp"
-
         android:elevation="4dp"/>
 
     <!-- BMI Result Output -->
     <TextView
-        android:id="@+id/bmiResult"
+        android:id="@+id/bmiResultText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Your BMI will appear here"
@@ -86,24 +85,31 @@
         android:textColor="#444444"
         android:textStyle="bold"
         android:layout_below="@id/calculateButton"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="70dp"
         android:layout_centerHorizontal="true"/>
 
-    <!-- Decorative Footer Text -->
     <ImageView
+        android:id="@+id/bmiImage"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:src="@drawable/icon_bmi"
-        android:layout_marginTop="400dp"/>
-    <TextView
-        android:id="@+id/footerText"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stay healthy, stay fit!"
-        android:textSize="16sp"
-        android:textColor="#666666"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginTop="30dp"
+        android:src="@drawable/icon_bmi"
+        android:layout_below="@id/titleText"/>
+
+    <TextView
+        android:id="@+id/bmiResult"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bmiResultText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="110dp"
+        android:text="50"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="100sp"
+        android:textStyle="bold" />
+
 
 </RelativeLayout>

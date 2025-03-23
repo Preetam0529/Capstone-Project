@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@drawable/app_bg">
+    android:background="@drawable/app_background">
 
     <!-- Header Title -->
     <TextView
@@ -23,9 +23,9 @@
     <!-- BP Image -->
     <ImageView
         android:id="@+id/bpImage"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/icon_bp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/icon_blood_pressure"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:contentDescription="Blood Pressure Icon" />
@@ -99,7 +99,7 @@
         android:layout_gravity="center"
         android:backgroundTint="@color/black"
         android:padding="10dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="100dp"
         android:text="Submit"
         android:background="@drawable/rounded_button"
         android:textColor="@color/white"

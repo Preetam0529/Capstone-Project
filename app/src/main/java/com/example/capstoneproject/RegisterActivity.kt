@@ -5,15 +5,13 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
-class LoginActivity:AppCompatActivity(){
+class RegisterActivity:AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_register)
 
         supportActionBar?.hide()
 
-        findViewById<TextView>(R.id.registerHere).setOnClickListener{
-            startActivity(Intent(this,RegisterActivity::class.java))
-        }
+
     }
 }
