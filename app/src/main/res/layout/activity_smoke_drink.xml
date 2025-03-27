@@ -9,11 +9,11 @@
 
     <ImageView
         android:id="@+id/smoke"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"
         android:src="@drawable/icon_smoking"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="30dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -55,7 +55,7 @@
         android:text="Do you drink?"
         android:textColor="@color/black"
         android:textSize="40dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="40dp"
         android:layout_gravity="center"/>
 
     <RadioGroup
@@ -63,7 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="10dp"
         android:layout_gravity="center"
         android:background="@drawable/custom_radio_button">
 
@@ -82,14 +82,23 @@
             android:layout_marginStart="16dp"
             android:textSize="30sp"/>
     </RadioGroup>
-
+<!--
     <ImageView
         android:id="@+id/drink"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="250dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:src="@drawable/icon_alcohol"
         android:contentDescription="Description of the image" />
+-->
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="70dp"/>
+
 
 </LinearLayout>

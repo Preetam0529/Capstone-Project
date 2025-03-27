@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:background="@drawable/app_background"
-    tools:context=".MainActivity">
+    tools:context=".ui.user_info.AgeSelectActivity">
 
     <TextView
         android:id="@+id/textView"

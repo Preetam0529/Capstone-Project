@@ -23,6 +23,12 @@
             android:textStyle="bold"
             android:paddingBottom="16dp" />
 
+        <RadioGroup
+            android:id="@+id/radioGroupConditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
         <!-- Health Condition Checkboxes -->
         <RadioButton
             android:id="@+id/radio_arthritis"
@@ -204,6 +210,7 @@
             android:background="@drawable/custom_radio_button"
             android:layoutDirection="rtl"/>
 
+        </RadioGroup>
 
         <!-- Submit Button -->
         <Button
@@ -213,8 +220,8 @@
             android:text="Submit"
             android:layout_marginTop="24dp"
             android:textColor="@android:color/white"
-            android:backgroundTint="@color/teal_700"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:background="@drawable/rounded_button"/>
 
     </LinearLayout>
 

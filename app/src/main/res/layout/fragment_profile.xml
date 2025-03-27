@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvFullname"
         android:layout_width="160dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
@@ -34,15 +34,15 @@
         app:layout_constraintTop_toBottomOf="@+id/profilePic" />
 
     <Button
-        android:id="@+id/addProfile"
+        android:id="@+id/viewProfile"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
-        android:text="Add Profile"
+        android:text="View My Profile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/tvFullname" />
 
     <Button
         android:id="@+id/language"
@@ -54,7 +54,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addProfile" />
+        app:layout_constraintTop_toBottomOf="@+id/viewProfile" />
 
     <Button
         android:id="@+id/button3"

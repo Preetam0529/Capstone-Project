@@ -7,28 +7,26 @@
     android:padding="16dp"
     android:background="@drawable/app_background">
 
-    <!-- Heading -->
     <TextView
         android:id="@+id/heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
         android:text="Diet Type"
-        android:layout_marginTop="25dp"
+        android:textColor="@android:color/black"
         android:textSize="34sp"
         android:textStyle="bold"
-        android:textColor="@android:color/black"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="24dp"/>
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Veg Button -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_veg"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="236dp"
         android:backgroundTint="@android:color/white"
         android:elevation="4dp"
         android:text="Veg"
@@ -37,49 +35,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/heading" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-    <!-- Keto Button -->
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_keto"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@android:color/white"
-        android:elevation="4dp"
-        android:text="Keto"
-        android:textColor="@android:color/black"
-        app:cornerRadius="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_vegan" />
-
-    <!-- Vegan Button -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_vegan"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="76dp"
         android:backgroundTint="@android:color/white"
         android:elevation="4dp"
         android:text="Vegan"
         android:textColor="@android:color/black"
         app:cornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_non_veg" />
+        app:layout_constraintTop_toBottomOf="@+id/button_non_veg" />
 
-    <!-- Non-Veg Button -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_non_veg"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="84dp"
         android:backgroundTint="@android:color/white"
         android:elevation="4dp"
         android:text="Non-Veg"
@@ -88,6 +66,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_veg" />
+        app:layout_constraintTop_toBottomOf="@+id/button_veg" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_keto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@android:color/white"
+        android:elevation="4dp"
+        android:text="Keto"
+        android:textColor="@android:color/black"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_vegan"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        app:srcCompat="@drawable/icon_diet_type" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

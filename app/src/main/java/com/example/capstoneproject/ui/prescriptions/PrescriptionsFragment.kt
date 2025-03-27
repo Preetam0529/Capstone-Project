@@ -14,7 +14,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.capstoneproject.R
+import com.example.capstoneproject.*
 
 class PrescriptionsFragment : Fragment() {
     private val viewModel: PrescriptionsViewModel by viewModels()
@@ -32,7 +32,8 @@ class PrescriptionsFragment : Fragment() {
         recyclerView = view.findViewById(R.id.recyclerViewPrescriptions)
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
-        adapter = PrescriptionsAdapter(viewModel)
+        val dbHelper = DatabaseHelper(requireContext())
+        adapter = PrescriptionsAdapter(viewModel, dbHelper)
         recyclerView.adapter = adapter
 
         // Observe ViewModel

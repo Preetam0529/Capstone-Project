@@ -6,21 +6,30 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".ui.prescriptions.PrescriptionsFragment">
+    tools:context=".ui.prescriptions.PrescriptionsFragment"
+    android:background="@drawable/app_background">
+
+    <!-- Header Image -->
+    <ImageView
+        android:id="@+id/headerImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icon_prescription"
+        android:scaleType="centerCrop"
+        android:contentDescription="Prescription Header Image"/>
 
     <!-- Upload Prescription -->
     <Button
         android:id="@+id/btnUploadPrescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Upload Prescription" />
+        android:text="Upload Prescription"
+        android:layout_marginTop="90dp"/>
 
     <!-- Save Prescription -->
-    <Button
-        android:id="@+id/btnSavePrescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Save Prescription" />
+
 
     <!-- List of Saved Prescriptions -->
     <androidx.recyclerview.widget.RecyclerView
